@@ -1,22 +1,24 @@
 {
-  "headers": [
-    {
-      "source": "/sw.js",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
+    "github": {
+        "silent": true
     },
-    {
-      "source": "(.*)",
-      "headers": [
+    "headers": [
         {
-          "key": "Cache-Control",
-          "value": "public, s-maxage=86400, max-age=86400"
+            "source": "/(.*)",
+            "headers": [
+                {
+                    "key": "X-Real-IP",
+                    "value": "$remote_addr"
+                },
+                {
+                    "key": "X-Forwarded-For",
+                    "value": "$proxy_add_x_forwarded_for"
+                },
+                {
+                    "key": "Host",
+                    "value": "$http_host"
+                }
+            ]
         }
-      ]
-    }
-  ]
+    ]
 }
