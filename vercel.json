@@ -1,24 +1,22 @@
 {
-    "github": {
-        "silent": true
-    },
-    "headers": [
+  "headers": [
+    {
+      "source": "/sw.js",
+      "headers": [
         {
-            "source": "/(.*)",
-            "headers": [
-                {
-                    "key": "X-Real-IP",
-                    "value": "$remote_addr"
-                },
-                {
-                    "key": "X-Forwarded-For",
-                    "value": "$proxy_add_x_forwarded_for"
-                },
-                {
-                    "key": "Host",
-                    "value": "$http_host"
-                }
-            ]
+          "key": "Cache-Control",
+          "value": "public, max-age=0, must-revalidate"
         }
-    ]
+      ]
+    },
+    {
+      "source": "(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, s-maxage=86400, max-age=86400"
+        }
+      ]
+    }
+  ]
 }
