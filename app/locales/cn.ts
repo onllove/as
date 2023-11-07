@@ -8,8 +8,9 @@ const cn = {
   Error: {
     Unauthorized: isApp
       ? "检测到无效 API Key，请前往[设置](/#/settings)页检查 API Key 是否配置正确。"
-      : "访问密码不正确或为空，请前往[登录](/#/auth)页输入正确的访问密码，或者在[设置](/#/settings)页填入你自己的 OpenAI API Key。",
-  },
+      : "访问密码不正确或为空，请关注*[QQ群730704784](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=Jk9Fe4-BpZJeZq7XZsEzfAmNY8yWMKru&authKey=M85ZHDAfnuRexu6b1%2B8ECSv1n5kWtyeNip1N5J3CfsiGXssfVjuZ3uLi2%2FKcs%2Fqz&noverify=0&group_code=730704784)*获取置顶最新密码。前往[登录](/#/auth)页输入正确的访问密码，或者在[设置](/#/settings)页填入访问密码。",
+  }
+
   Auth: {
     Title: "需要密码",
     Tips: "管理员开启了密码验证，请在下方填入访问码",
@@ -310,8 +311,8 @@ const cn = {
   },
   Store: {
     DefaultTopic: "新的聊天",
-    BotHello: "访问密码不正确或为空，请关注*[QQ群730704784](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=Jk9Fe4-BpZJeZq7XZsEzfAmNY8yWMKru&authKey=M85ZHDAfnuRexu6b1%2B8ECSv1n5kWtyeNip1N5J3CfsiGXssfVjuZ3uLi2%2FKcs%2Fqz&noverify=0&group_code=730704784)*获取置顶最新密码"
-            "然后前往[登录](/#/auth)页或点击左下角[设置](/#/settings)按钮输入密码即可解锁使用",
+    BotHello: "更多AI相关内容，请关注*[QQ群730704784](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=Jk9Fe4-BpZJeZq7XZsEzfAmNY8yWMKru&authKey=M85ZHDAfnuRexu6b1%2B8ECSv1n5kWtyeNip1N5J3CfsiGXssfVjuZ3uLi2%2FKcs%2Fqz&noverify=0&group_code=730704784)*，需要官网3.5账号与API请练习群主",
+  }
     Error: "出错了，稍后重试吧",
     Prompt: {
       History: (content: string) => "这是历史聊天总结作为前情提要：" + content,
