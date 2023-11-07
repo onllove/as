@@ -310,7 +310,8 @@ const cn = {
   },
   Store: {
     DefaultTopic: "新的聊天",
-    BotHello: "有什么可以帮你的吗",
+    BotHello: "访问密码不正确或为空，请关注*[QQ群730704784](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=Jk9Fe4-BpZJeZq7XZsEzfAmNY8yWMKru&authKey=M85ZHDAfnuRexu6b1%2B8ECSv1n5kWtyeNip1N5J3CfsiGXssfVjuZ3uLi2%2FKcs%2Fqz&noverify=0&group_code=730704784)*获取置顶最新密码"
+            "然后前往[登录](/#/auth)页或点击左下角[设置](/#/settings)按钮输入密码即可解锁使用",
     Error: "出错了，稍后重试吧",
     Prompt: {
       History: (content: string) => "这是历史聊天总结作为前情提要：" + content,
